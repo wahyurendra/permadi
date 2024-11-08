@@ -1,5 +1,5 @@
 PERMADI is a predictive maintenance solution leveraging digital twin and 5G technology to reduce unplanned downtime in manufacturing. With real-time IoT sensor data, PERMADI enables proactive maintenance, minimizing breakdowns and lowering costs, improving production efficiency and profitability.
-@[youtube](https://www.youtube.com/watch?v=t2SfFPTxRc4)
+[![Watch the video](https://img.youtube.com/vi/nTQUwghvy5Q/default.jpg)](https://youtu.be/t2SfFPTxRc4)
 
 
 ## Quick Start
