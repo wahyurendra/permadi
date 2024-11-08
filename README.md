@@ -1,10 +1,12 @@
 PERMADI is a predictive maintenance solution leveraging digital twin and 5G technology to reduce unplanned downtime in manufacturing. With real-time IoT sensor data, PERMADI enables proactive maintenance, minimizing breakdowns and lowering costs, improving production efficiency and profitability.
+![mockingbird](https://www.youtube.com/watch?v=T2mbQ6zsOK8)
 
 ## Quick Start
 
 >- CPU >= 4 core
 >- RAM 4 GB
 
+Installation
 ```
 cd FE-permadi
 npm install
