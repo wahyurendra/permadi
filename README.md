@@ -14,3 +14,10 @@ npm start
 Dashboard Mockup
 ![dark](https://github.com/wahyurendra/permadi/blob/main/assets/permadi-dark.png)
 ![light](https://github.com/wahyurendra/permadi/blob/main/assets/permadi-light.png)
+
+
+
+
+## Model Evaluation
+![conf](https://github.com/wahyurendra/permadi/blob/main/assets/confmatrix.png)
+![roc](https://github.com/wahyurendra/permadi/blob/main/assets/roc.png)
