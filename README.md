@@ -11,3 +11,6 @@ npm install
 npm start
 ```
 
+Dashboard Mockup
+![dark](https://github.com/wahyurendra/permadi/blob/main/assets/permadi-dark.png)
+![light](https://github.com/wahyurendra/permadi/blob/main/assets/permadi-light.png)
