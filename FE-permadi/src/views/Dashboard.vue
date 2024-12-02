@@ -111,7 +111,7 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
 
 
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #FF0000;">
+            <div class="card mb-0" :style="{ backgroundColor: !isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: !isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 1</div>
@@ -190,21 +190,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 2</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-green-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
@@ -269,7 +269,7 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #FF0000">
+            <div class="card mb-0" :style="{ backgroundColor: !isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: !isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 3</div>
@@ -348,21 +348,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 4</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
@@ -427,21 +427,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16;">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 5</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
@@ -506,21 +506,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 6</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
@@ -585,21 +585,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 7</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
@@ -664,21 +664,21 @@ const { getPrimary, getSurface, isDarkTheme } = useLayout();
             </div>
         </div>
         <div class="col-span-12 lg:col-span-6 xl:col-span-3">
-            <div class="card mb-0" style="border: 2px solid #84cc16">
+            <div class="card mb-0" :style="{ backgroundColor: isDarkTheme ? '#FFE2E3' : '#D0FBE7', border: isDarkTheme ? '2px solid red' : '2px solid green' }">
                 <div class="flex justify-between mb-4">
                     <div>
                         <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">Machine 8</div>
                     </div>
                     <div class="grid grid-rows-3 grid-flow-col gap-4">
                         <div class="row-span-3 ...">
-                            <div class="flex items-center justify-center bg-red-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
-                                <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   />
+                            <div class="flex items-center justify-center bg-green-100 dark:bg-red-400/10 rounded-border" style="width: 5rem; height: 5rem">
+                                <!-- <FontAwesomeIcon :icon="faTriangleExclamation" :style="{ color: 'red' }" size="2x"   /> -->
                             </div>
                         </div>
-                        <div class="flex items-center col-span-2 row-span-3">
+                        <!-- <div class="flex items-center col-span-2 row-span-3">
                             <div class="text-surface-900 dark:text-surface-0 font-medium text-xl">4 Alert</div>
 
-                        </div>
+                        </div> -->
                     </div>
                         
                     
