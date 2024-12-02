@@ -2,7 +2,6 @@
 
 <template>
     <div class="layout-footer">
-        SAKAI by
-        <a href="https://primevue.org" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">PrimeVue</a>
+        <p>&copy; 2024 PERMADI. All rights reserved.</p>
     </div>
 </template>

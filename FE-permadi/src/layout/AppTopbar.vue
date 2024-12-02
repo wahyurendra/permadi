@@ -8,6 +8,15 @@ const { onMenuToggle, toggleDarkMode, isDarkTheme,layoutConfig } = useLayout();
 const logoUrl = computed(() => {
     return `/layout/images/${isDarkTheme.value ? 'permadi-logo-white' : 'permadi-logo-black'}.png`;
 });
+const handleLogout = () => {
+
+  localStorage.removeItem('token');
+  localStorage.removeItem('user');
+  sessionStorage.removeItem('token');
+  
+  // Redirect to login page
+  window.location.href = '/login';
+};
 </script>
 
 <template>
@@ -56,10 +65,15 @@ const logoUrl = computed(() => {
                         <i class="pi pi-inbox"></i>
                         <span>Messages</span>
                     </button> -->
-                    <button type="button" class="layout-topbar-action">
+                    <!-- <button type="button" class="layout-topbar-action">
                         <i class="pi pi-user"></i>
                         <span>Profile</span>
+                    </button> -->
+                    <button type="button" @click="handleLogout"  class="layout-topbar-action">
+                        <i class="pi pi-sign-out"></i>
+                        <span>Logout</span>
                     </button>
+
                 </div>
             </div>
         </div>
