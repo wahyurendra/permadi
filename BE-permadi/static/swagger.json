@@ -1,0 +1,97 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Permadi API",
+    "version": "1.0.0",
+    "description": "API for managing accounts, machines and tasks"
+  },
+  "basePath": "/api/v1",
+  "schemes": ["http"],
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header"
+    }
+  },
+  "paths": {
+    "/login": {
+      "post": {
+        "tags": ["Authentication"],
+        "summary": "Login to get JWT token",
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "email": {"type": "string"},
+              "password": {"type": "string"}
+            }
+          }
+        }],
+        "responses": {
+          "200": {
+            "description": "Login successful",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "token": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/machine": {
+      "post": {
+        "tags": ["Machines"],
+        "security": [{"Bearer": []}],
+        "summary": "Add new machine",
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "name": {"type": "string"},
+              "status": {"type": "boolean"},
+              "account_id": {"type": "string"}
+            }
+          }
+        }],
+        "responses": {
+          "200": {"description": "Machine added successfully"}
+        }
+      }
+    },
+    "/task": {
+      "post": {
+        "tags": ["Tasks"],
+        "security": [{"Bearer": []}],
+        "summary": "Create new task",
+        "parameters": [{
+          "in": "body",
+          "name": "body",
+          "schema": {
+            "type": "object",
+            "properties": {
+              "type": {"type": "integer"},
+              "description": {"type": "string"},
+              "start_date": {"type": "string", "format": "date-time"},
+              "isClosed": {"type": "boolean"},
+              "immobilised": {"type": "boolean"},
+              "machine_id": {"type": "string"},
+              "account_id": {"type": "string"},
+              "supervisor": {"type": "string"},
+              "assigned": {"type": "string"}
+            }
+          }
+        }],
+        "responses": {
+          "200": {"description": "Task created successfully"}
+        }
+      }
+    }
+  }
+}

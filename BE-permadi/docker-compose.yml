@@ -1,0 +1,40 @@
+version: '3.4'
+services:
+  mongodb-preface:
+    image: mongo
+    container_name: mongodb-permadi
+    ports:
+    - 27017:27017
+    environment:
+    - MONGO_INITDB_DATABASE=dbpermadi
+    - MONGO_INITDB_ROOT_USERNAME=root
+    - MONGO_INITDB_ROOT_PASSWORD=root
+    volumes:
+    # seeding scripts
+    - ./mongo-entrypoint:/docker-entrypoint-initdb.d
+    # named volumes
+    - mongodb:/data/db
+    - mongoconfig:/data/configdb
+    networks:
+    - mongo_net
+  
+  be-permadi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: be-permadi
+    ports:
+      - "5001:5001" 
+    environment:
+      - FLASK_ENV=development # Set Flask environment variable
+      - SECRET='p3rm4d1'
+
+
+volumes:
+  # default dir on Ubuntu: /var/lib/docker/volumes
+  mongodb:
+  mongoconfig:
+
+networks:
+  mongo_net:
+    driver: bridge
